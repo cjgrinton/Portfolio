@@ -1,53 +1,102 @@
 import Link from "next/link";
+import Footer from "../../components/Footer";
 
 export default function About() {
 
     return (
-        <main className="w-[700px] h-[650px] mx-auto md:p-8 p-4 bg-window-panel shadow-4xl relative z-10">
-            <div className=" font-custom flex flex-col items-center w-full gap-2 mb-8 mt-15 bg-selector">
+        <main className="min-h-screen flex flex-col items-center p-8 relative z-10">
+            <div className="w-full max-w-[800px] flex-grow font-custom flex flex-col items-center gap-2 mb-12 mt-10">
 
                 <div className="flex flex-col items-center text-center">
-                    <div className="font-semibold text-4xl text-slate-800" >
+                    <div className="font-custom font-semibold text-4xl text-slate-900 mb-5" >
                         About Me
                     </div>
-                    <div className="font-semibold text-2xl text-slate-700" >
+                    <div className="font-custom font-semibold text-2xl text-slate-700 mb-2" >
                         Caleb Grinton
                     </div>
 
-                    <div className="flex flex-row justify-center gap-2 mb-4 mt-1 w-full">
-                        <Link href="/" className="font-light text-md text-slate-600">Home</Link>
-                        <Link href="/about" className="font-light text-md text-slate-600">About</Link>
-                        <Link href="/projects" className="font-light text-md text-slate-600">Projects</Link>
-                        <Link href="/contact" className="font-light text-md text-slate-600">Contact</Link>
-                    </div>
+                    <nav className="flex flex-row justify-center gap-6 mb-12 mt-1 w-full border-b border-slate-900 pb-4">
+                        <Link href="/" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-1">Home</Link>
+                        <Link href="/projects" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-2">Projects</Link>
+                        <Link href="/contact" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-2">Contact</Link>
+                    </nav>
 
                     <div className="font-semibold text-sm text-start text-slate-600">
-                        {/* too long, needs to be shortened and a bit more professional */}
-                        {/* <p className="pb-2">
-                            Hello! My name is Caleb Grinton, and welcome to my personal corner of the web!
-                            I am an ***Aspiring Web Designer*** with a keen focus on crafting intuitive and engaging user interfaces (**UI design**).
-                            My journey into coding was sparked by inspiration from my older sister, whose talent showed me the creative potentisl of a career in technology. 
-                            I enjoy the challenge of translating ideas into intriguing, user-friendly digital experiences.
-                        </p>
-                        <p className="pb-2">
-                            Looking ahead, my goal is simple: to continuously grow my coding expertise and eventually lead a team - ideally a **UI design team** - where I can mentor others and drive innovative projects.
-                        </p>
-                        <p className="pb-2">
-                            When I'm not busy designing, I let roam free in other ways.
-                            I enjoy making pencil sketches of some of my interests, and have a passion for collecting cool stickers for my desk and laptop. Also, I enjoy building intricate LEGO displays.
-                            My gaming passions are just as varied: I like to dominant the track in Mariokart 8 and Team Sonic Racing, tapping along to Friday Night Funkin', or indulging in my favourite franchise, Sonic The Hedgehog (Metal Sonic is the best, hands down).
-                            I also enjoy the quirky fun of the mobile tower defense game, The Battle Cats! and travelling with my family.
-                        </p>
-                        <p>
-                            I believe that good design, much like a well-built LEGO set, reqiures both creativity and meticulous detail. I bring that same enthusiasm to every project I take on!
-                        </p> */}
+                        <h1 className="mb-2">RUNAWAY</h1>
+
+                        <p className="mb-2">So put your hands up to the light<br />
+                            Watch as we bring it to life tonight</p>
+
+                        <p className="mb-2">Coming from the dark<br />
+                            Your position knows not<br />
+                            The will to carry on<br />
+                            And restless is that<br />
+                            Idea burning hot<br />
+                            I wanted to take it higher than any one of us now<br />
+                            But some things fall away<br />
+                            And I've found it's a necessary change<br />
+                            For the future<br />
+                            And you might find it strange<br />
+                            Rest assured, I've made something so better<br />
+                            Made something forever<br />
+                            So what more could I want?<br />
+                            There's nothing I could want<br />
+                            It can't be for nothing<br />
+                            Yet I'm feeling a fool<br />
+                            And I'm desperate to keep it inside</p>
+
+                        <p className="mb-2">I won't give anything, no<br />
+                            I can't keep anything close to me<br />
+                            And then what do I want?<br />
+                            What's becoming of the ones that play the parts?<br />
+                            They pray that all will fall in place</p>
+
+                        <p className="mb-2">And they'll come running to the windows<br />
+                            Peering in and crying out<br />
+                            The martyrs play with me<br />
+                            They'll stay the course of our expansion ever farther<br />
+                            Spread my bliss so all can see<br />
+                            The rounds I've won<br />
+                            The friend that I will be<br />
+                            Only justifying just that little cost to entry</p>
+
+                        <p className="mb-2">So don't you say goodbye<br />
+                            I really feel we're just beginning</p>
+
+                        <p className="mb-2">Have we met before?<br />
+                            A beginning<br />
+                            No, there must be more<br />
+                            To what makes us, moves us, takes control<br />
+                            And it breaks us<br />
+                            This can't be all that's in store<br />
+                            I need an out<br />
+                            So come and breathe me in<br />
+                            And spit the bible out<br />
+                            Embodiment of sin<br />
+                            It's truly so devout<br />
+                            I saw it through<br />
+                            Oh, don't you want it too?<br />
+                            No, they don't even answer<br />
+                            It's breaking my heart…</p>
+
+                        <p className="mb-2">It's tearing your heart out<br />
+                            It's hopeless survival<br />
+                            Oh, where did the time go?<br />
+                            Remember the ones who ran forever?<br />
+                            My muses of nightmare<br />
+                            And now that I wake, I'm crying for it<br />
+                            "O, Calamity<br />
+                            Chasing shadows of your wings<br />
+                            Holding close your memory<br />
+                            Praying I could ever see you again"</p>
+
+                        <p className="mb-2">Why would I ever want for something else when I am god?<br />
+                            What becomes of the want to see myself a runaway?</p>
                     </div>
 
                 </div>
             </div>
-            <div className="font-custom font-semibold text-md text-slate-700 text-center items-baseline">
-                @2026 Caleeb
-            </div>
+            <Footer />
         </main>
     );
 }

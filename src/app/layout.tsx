@@ -9,7 +9,7 @@ const customFont = localFont({
 
 export const metadata: Metadata = {
   title: "Personal Portfolio Website",
-  description: "The first major project for WEBD3100"
+  description: "My First Portfolio ahh site"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
