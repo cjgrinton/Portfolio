@@ -20,10 +20,12 @@ export const ImageModal: React.FC<ImageModalProps> = ({ image, onClose }) => {
         // attach the event listener when the modal is open
         if (image) {
             document.addEventListener('keydown', handleESC);
+            document.body.style.overflow = 'hidden';
         }
 
         return () => {
             document.removeEventListener('keydown', handleESC);
+            document.body.style.overflow = 'unset';
         };
     }, [image, onClose]);
 
@@ -63,8 +65,11 @@ export const ImageModal: React.FC<ImageModalProps> = ({ image, onClose }) => {
                         <p className="text-gray-700 text-xl leading-relaxed whitespace-pre-line">{image.description}</p>
                     </div>
 
-                    <div className="pt-2 text-gray-800 text-lg hover:underline">
-                        <a href={image.link}>Go To Site</a>
+                    {/* link to site or github */}
+                    <div className="p-5 bg-white border-t border-gray-300">
+                        <div className="pt-2 pb-2 text-gray-800 text-lg hover:underline">
+                            <a href={image.link} target="_blank" >Go There:</a>
+                        </div>
                     </div>
                 </div>
 

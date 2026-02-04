@@ -13,7 +13,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center text-center">
 
-          <h1 className="font-semibold text-4xl text-slate-900 mb-5" >
+          <h1 className="font-semibold text-4xl/15 text-slate-900 mb-5" >
             Caleb Grinton
           </h1>
           <h2 className="font-semibold text-2xl text-slate-700 mb-2 tracking-wide" >

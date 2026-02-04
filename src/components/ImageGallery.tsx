@@ -13,11 +13,11 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({ onSelectImage }) => 
                 <div key={image.id} className="group cursor-pointer bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2  hover:shadow-2xl hover:ring-4 hover:ring-blue-500/30" onClick={() => onSelectImage(image)}>
 
                     <div className="relative h-64 md:h-80 lg:h-[450px] overflow-hidden">
-                        <img src={image.urls[0]} alt={image.alt} className=" w-full h-full object-cover object-top transition duration-500 group-hover:opacity-105" />
+                        <img src={image.urls[0]} alt={image.alt} className="w-full h-full object-cover object-top transition duration-500 group-hover:opacity-105" />
                     </div>
 
                     <div className="p-6">
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-800 leading-tight line-clamp-2">
+                        <h3 className="capitalize text-md md:text-2xl font-medium text-gray-800 leading-tight line-clamp-2">
                             {image.alt}
                         </h3>
 
