@@ -89,7 +89,7 @@ export default function Contact() {
             <div className="w-full max-w-[800px] flex-grow flex flex-col items-center gap-2 mb-12 mt-10">
 
                 <div className="flex flex-col items-center text-center">
-                    <div className="font-custom font-semibold text-4xl/15 text-slate-900 mb-5" >
+                    <div className="font-custom font-semibold text-4xl/17 text-slate-900 mb-5" >
                         Contact Me
                     </div>
                     <div className="font-custom font-semibold text-2xl text-slate-700 mb-2" >

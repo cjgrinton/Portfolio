@@ -62,13 +62,13 @@ export const ImageModal: React.FC<ImageModalProps> = ({ image, onClose }) => {
                         <div className="text-gray-800 text-2xl underline">
                             Description
                         </div>
-                        <p className="text-gray-700 text-xl leading-relaxed whitespace-pre-line">{image.description}</p>
+                        <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">{image.description}</p>
                     </div>
 
                     {/* link to site or github */}
-                    <div className="p-5 bg-white border-t border-gray-300">
-                        <div className="pt-2 pb-2 text-gray-800 text-lg hover:underline">
-                            <a href={image.link} target="_blank" >Go There:</a>
+                    <div className="p-2 bg-white">
+                        <div className="pt-2 pb-15 text-gray-800 text-lg">
+                            <a href={image.link} target="_blank" className="px-10 py-4 backdrop-blur-sm bg-blue-600 text-slate-800 rounded-full font-bold text-lg hover:bg-blue-300 transition-all hover:shadow-xl active:scale-95">Visit</a>
                         </div>
                     </div>
                 </div>
