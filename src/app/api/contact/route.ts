@@ -4,10 +4,19 @@ import { Resend } from 'resend';
 //resend initialization with API key
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+const sanitize = (str: string) => str
+    .replace(/<[^>]*>?/gm, '')
+    .trim()
+
 export async function POST(req: Request) {
     try {
         // parse the form data from the request body
-        const { name, email, subject, message } = await req.json();
+        const body = await req.json();
+
+        const name = sanitize(body.name || '');
+        const email = sanitize(body.email || '');
+        const subject = sanitize(body.subject || '');
+        const message = sanitize(body.message || '');
 
         // server side validation
         if (!name || !email || !subject || !message) {

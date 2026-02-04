@@ -62,6 +62,10 @@ export const ImageModal: React.FC<ImageModalProps> = ({ image, onClose }) => {
                         </div>
                         <p className="text-gray-700 text-xl leading-relaxed whitespace-pre-line">{image.description}</p>
                     </div>
+
+                    <div className="pt-2 text-gray-800 text-lg hover:underline">
+                        {image.link}
+                    </div>
                 </div>
 
             </div>
