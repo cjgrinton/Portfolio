@@ -64,7 +64,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({ image, onClose }) => {
                     </div>
 
                     <div className="pt-2 text-gray-800 text-lg hover:underline">
-                        {image.link}
+                        <a href={image.link}>Go To Site</a>
                     </div>
                 </div>
 
