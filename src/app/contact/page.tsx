@@ -92,14 +92,14 @@ export default function Contact() {
                     <div className="font-custom font-semibold text-4xl/17 text-slate-900 mb-5" >
                         Contact Me
                     </div>
-                    <div className="font-custom font-semibold text-2xl text-slate-700 mb-2" >
+                    <div className="font-custom font-semibold text-2xl text-slate-700 mb-4" >
                         Caleb Grinton
                     </div>
 
                     <nav className="font-custom flex flex-row justify-center gap-6 mb-12 mt-1 w-full border-b border-slate-900 pb-4">
-                        <Link href="/" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-1">Home</Link>
-                        <Link href="/projects" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-2">Projects</Link>
-                        <Link href="/contact" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-2">Contact</Link>
+                        <Link href="/" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-1">Home</Link>
+                        <Link href="/projects" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Projects</Link>
+                        <Link href="/contact" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Contact</Link>
                     </nav>
                 </div>
 

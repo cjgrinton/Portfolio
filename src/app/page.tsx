@@ -16,14 +16,14 @@ export default function Home() {
           <h1 className="font-semibold text-4xl/15 text-slate-900 mb-5" >
             Caleb Grinton
           </h1>
-          <h2 className="font-semibold text-2xl text-slate-700 mb-2 tracking-wide" >
+          <h2 className="font-semibold text-2xl text-slate-700 mb-4 tracking-wide" >
             IT Web Programmer
           </h2>
 
           <nav className="flex flex-row justify-center gap-6 mb-12 mt-1 w-full border-b border-slate-900 pb-4">
-            <Link href="/" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-1">Home</Link>
-            <Link href="/projects" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-2">Projects</Link>
-            <Link href="/contact" className="font-light text-md text-slate-600 hover:text-slate-900 transition hover:-translate-y-2">Contact</Link>
+            <Link href="/" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-1">Home</Link>
+            <Link href="/projects" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Projects</Link>
+            <Link href="/contact" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Contact</Link>
           </nav>
 
           <div className="font-medium text-lg leading-relaxed text-center text-slate-900 mb-12 max-w-[650px] px-4">
