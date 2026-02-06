@@ -8,8 +8,8 @@ const customFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio Website",
-  description: "My First Portfolio ahh site"
+  title: "CalebGrintonPortfolio",
+  description: "My First Portfolio! ahh site"
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
