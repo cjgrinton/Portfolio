@@ -4,6 +4,10 @@
     font-family: var(--font-CD);
 }
 
+body {
+    font-family: var(--font-roboto), sans-serif;
+}
+
 /* KEYFRAME ANIMATION: moves the clouds from 0% left to -100% left (and back) */
 @keyframes cloud-scroll {
     0% {

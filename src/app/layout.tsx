@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Roboto, Inter } from "next/font/google";
 import "./globals.css";
 
 const customFont = localFont({
   src: "./fonts/sonicCD.ttf",
   variable: "--font-CD",
+});
+
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+
+const inter = Inter({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {

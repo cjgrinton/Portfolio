@@ -5,7 +5,7 @@ export default function About() {
 
     return (
         <main className="min-h-screen flex flex-col items-center p-8 relative z-10">
-            <div className="w-full max-w-[800px] flex-grow font-custom flex flex-col items-center gap-2 mb-12 mt-10">
+            <div className="w-full max-w-[800px] flex-grow flex flex-col items-center gap-2 mb-12 mt-10">
 
                 <div className="flex flex-col items-center text-center">
                     <div className="font-custom font-semibold text-4xl text-slate-900 mb-5" >
@@ -15,13 +15,13 @@ export default function About() {
                         Caleb Grinton
                     </div>
 
-                    <nav className="flex flex-row justify-center gap-6 mb-12 mt-1 w-full border-b border-slate-900 pb-4">
-                        <Link href="/" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-1">Home</Link>
-                        <Link href="/projects" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-2">Projects</Link>
-                        <Link href="/contact" className="font-light text-md text-slate-600 hover:text-slate-900 hover:-translate-y-2">Contact</Link>
+                    <nav className="font-custom flex flex-row justify-center gap-6 mb-12 mt-1 w-full border-b border-slate-900 pb-4">
+                        <Link href="/" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-1">Home</Link>
+                        <Link href="/projects" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Projects</Link>
+                        <Link href="/contact" className="font-light text-md text-slate-500 hover:text-slate-900 transition hover:-translate-y-2">Contact</Link>
                     </nav>
 
-                    <div className="font-semibold text-sm text-start text-slate-600">
+                    <div className="font-semibold text-medium text-center text-slate-900">
                         <h1 className="mb-2">RUNAWAY</h1>
 
                         <p className="mb-2">So put your hands up to the light<br />
